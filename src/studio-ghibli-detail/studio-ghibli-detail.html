@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghiblit Detail</title>
+    <link rel="stylesheet" href="../../styles.css">
+   <link rel="stylesheet" href="../studio-ghibli-detail/studio-ghibli-detail.css">
+</head>
+<body>
+   <header>
+    <nav>
+        <a href="../studio-ghibli/studio-ghibli.html">Home</a>
+        <img class='logo'src="https://www.studioghibli.com.au/wp-content/themes/ghibli/images/ghibli_logo_white.png" alt="logo">
+    </nav>
+   </header>
+    <main>
+        <div class='stage-photo__container'></div>
+        <div class='detail'>
+            <div class='cover__container'></div> 
+            <div class='film-info__container'>     
+        </div>
+        </div>
+        <div class='more'></div>
+    </main>
+
+    <footer>
+        <img class='logo'src="https://www.studioghibli.com.au/wp-content/themes/ghibli/images/ghibli_logo_white.png" alt="">
+    </footer>
+</body>
+<script src ='../../index.js'></script>
+<script src="../studio-ghibli-detail/studio-ghibli-detail.js"></script>
+<script>
+    const id = getIdFromUrl(location);
+    getFilmDetailFromFetch(id) 
+      .then((film) => {
+          printStagePhoto(film);
+          printCover(film);
+          printTitle(film);
+          printDirector(film);
+          printDescription(film);
+          printReleaseDateAndProducer(film);
+          printRtScore(film);
+          getFlimListFromUrl()
+          .then((list)=>{
+            printMoreFilm(list);
+            printBtnMoreFilm();
+          })
+      })
+
+</script>
+</html>

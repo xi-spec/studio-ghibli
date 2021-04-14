@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio-Ghibli</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="studio-ghibli.css">
+</head>
+<body>
+    <header>
+        <div class='introduccion'>
+            <img class='logo-bg' src="https://i.pinimg.com/originals/03/51/71/0351711fe834c3a96656f65b4c54b2b2.jpg" alt="">
+            <h2>
+                The Studio Ghibli Collection
+            </h2>
+            <p>
+                One of the most acclaimed studios in the world, Studio Ghibli is the home of some of the most revered and beloved animated works to have ever graced the screen.
+            </p>
+
+            <p>
+                The Studio Ghibli catalogue is now available to buy or rent on digital platforms. Click on your favourite film below to order.
+            </p>
+        </div>
+    </header>
+    <main>
+       
+        <div class= 'container'></div>
+    </main>
+
+    <footer>
+        <img class='logo'src="https://www.studioghibli.com.au/wp-content/themes/ghibli/images/ghibli_logo_white.png" alt="">
+    </footer>
+</body>
+<script src='../../index.js'></script>
+<script src="../studio-ghibli/studio-ghibli.js"></script>
+<script>
+    getFilmListFromUrl()
+      .then((list) => {
+          printFilmList(list);
+      })
+</script>
+</html>

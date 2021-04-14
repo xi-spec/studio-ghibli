@@ -1,0 +1,168 @@
+header{
+  background-color: black;
+}
+nav {
+  height: 80px;
+  width: 100%;  
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+ background-color: black; 
+ color:white;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 12%;
+}
+
+nav a:hover{
+  color: rgb(177, 177, 177);
+}
+
+.logo{
+  display: flex;
+  align-self: center;
+  height:  50px;
+  margin-right: 80px;
+}
+
+.stage-img{
+  width: 100%;
+}
+
+
+.title__container h1{
+  display: flex;
+  align-items: center;
+  width: 400px;
+  height: 100px;
+}
+
+.cover-img{
+  width: 220px;
+  height: 330px;
+}
+
+
+.detail{
+  margin: 4em;
+  display: flex;
+  flex-direction: row;
+}
+
+.film-info__container{
+  margin: 0 30px;
+}
+
+h1{
+  border-bottom: 1px solid black;
+  margin-bottom: 40px;}
+
+.description{
+  margin-top: 20px;
+}
+
+.info{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.date{
+  margin-right: 10px;
+}
+
+.score{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.re-icon{
+  height: 30px;
+
+}
+.more{
+ padding: 50px 0;
+}
+.film-list{
+  margin:2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.view-all{
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.view-all:hover a{
+  background-color: black;
+  color:white;
+
+}
+a{
+  width: 180px;
+  text-align: center;
+  border-radius: 3%;
+}
+.film__container{
+ margin: 40px 20px
+
+}
+.film-cover{
+  width: 198px;
+  height: 297px;
+}
+
+
+footer{
+  margin-top:40px;
+  background-color: black;
+  height: 100px;
+  width: 100%;  
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer img{
+    display: flex;
+    align-self: center;
+    height: 50px;;
+    margin: 0 90px;
+}
+@media (max-width: 1000px) {
+  .detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cover-img{
+    height: 400px;
+    width: 250px;
+    padding-bottom: 20px;
+   
+  }
+
+ .info{
+   flex-direction: column;
+ }
+
+ .info >* {
+   padding-bottom: 20px;
+ }
+
+ .film-list{
+  margin:10px;
+  overflow-x: scroll; 
+  overflow-y: hidden;
+ 
+  justify-content: flex-start;
+
+
+}
+
+  }
